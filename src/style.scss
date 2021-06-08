@@ -1,0 +1,53 @@
+$bg-gradient1: rgba(131, 58, 180, 1);
+$bg-gradient2: rgba(252, 176, 69, 1);
+$bg-black: #000;
+$t-white: #fff;
+$bg-button: #db5c5c;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, $bg-gradient1 0%, $bg-gradient2 100%);
+}
+
+.widget {
+  min-width: 200px;
+  background: $t-white;
+  box-shadow: 0 0 5px 1px black;
+  &__calendar {
+    width: 100%;
+    border-radius: 10px;
+  }
+  &__month {
+    width: 100%;
+    background-color: firebrick;
+    text-align: center;
+    padding: 1em;
+    h1 {
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+  }
+  &__day {
+    // background-color: royalblue;
+    font-size: 5em;
+    padding: 0.3em;
+    text-align: center;
+  }
+  &__weekday {
+    text-align: center;
+    font-size: 2em;
+    padding: 0.3em;
+  }
+}
